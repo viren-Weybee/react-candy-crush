@@ -156,6 +156,7 @@ function App() {
     setDraggedCandy(Number(e.target.getAttribute("data-id")));
   };
 
+  console.log("change");
   const dragEnd = (e) => {
     console.log(e.target.getAttribute("data-id"), "dragEnd");
     e.target.style.transition = "all 2s";
